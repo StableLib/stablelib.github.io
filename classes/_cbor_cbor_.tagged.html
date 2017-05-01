@@ -71,10 +71,11 @@
 						<p>Tagged value.</p>
 					</div>
 					<p>Predefined tags are listed in Tags enum.</p>
-					<p>Some tagged values are handled automatically (Tags.DateString and
-						Tags.DateNumber correspond to Date object, Tags.RegExp to RegExp).
-						Others are returned as an instance of Tagged. If Tagged is passed
-					to encoder, it will properly encode it.</p>
+					<p>Some tagged values are handled automatically by default (Tags.DateString and
+						Tags.DateNumber correspond to Date object, Tags.RegExp to RegExp). Others
+						are returned as an instance of Tagged, unless encoder/decoder is provided
+						with customer converters. If Tagged is passed to encoder, it will properly
+					encode it.</p>
 					<p>IANA keeps &quot;CBOR Tags&quot; registry (see RFC 7049, Section 7.2).</p>
 				</div>
 			</section>
@@ -118,7 +119,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/099237f/packages/cbor/cbor.ts#L71">cbor/cbor.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/cbor/cbor.ts#L72">cbor/cbor.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -143,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/099237f/packages/cbor/cbor.ts#L72">cbor/cbor.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/cbor/cbor.ts#L73">cbor/cbor.ts:73</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,7 +154,7 @@
 					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/099237f/packages/cbor/cbor.ts#L72">cbor/cbor.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/cbor/cbor.ts#L73">cbor/cbor.ts:73</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -207,6 +208,36 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_cbor_cbor_.html#encoderoptions" class="tsd-kind-icon">Encoder<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#taggeddecoder" class="tsd-kind-icon">Tagged<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#taggedencoder" class="tsd-kind-icon">Tagged<wbr>Encoder</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#default_tagged_decoders" class="tsd-kind-icon">DEFAULT_<wbr>TAGGED_<wbr>DECODERS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#default_tagged_encoders" class="tsd-kind-icon">DEFAULT_<wbr>TAGGED_<wbr>ENCODERS</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#datenumberdecoder" class="tsd-kind-icon">Date<wbr>Number<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#datenumberencoder" class="tsd-kind-icon">Date<wbr>Number<wbr>Encoder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#datestringdecoder" class="tsd-kind-icon">Date<wbr>String<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#datestringencoder" class="tsd-kind-icon">Date<wbr>String<wbr>Encoder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#regexpdecoder" class="tsd-kind-icon">Reg<wbr>Exp<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_cbor_cbor_.html#regexpencoder" class="tsd-kind-icon">Reg<wbr>Exp<wbr>Encoder</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_cbor_cbor_.html#decode" class="tsd-kind-icon">decode</a>
