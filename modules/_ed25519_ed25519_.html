@@ -84,6 +84,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_ed25519_ed25519_.html#extractpublickeyfromsecretkey" class="tsd-kind-icon">extract<wbr>Public<wbr>Key<wbr>From<wbr>Secret<wbr>Key</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_ed25519_ed25519_.html#generatekeypair" class="tsd-kind-icon">generate<wbr>Key<wbr>Pair</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_ed25519_ed25519_.html#generatekeypairfromseed" class="tsd-kind-icon">generate<wbr>Key<wbr>Pair<wbr>From<wbr>Seed</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_ed25519_ed25519_.html#sign" class="tsd-kind-icon">sign</a></li>
@@ -101,7 +102,7 @@
 					<div class="tsd-signature tsd-kind-icon">PUBLIC_<wbr>KEY_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;32</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/ed25519/ed25519.ts#L9">ed25519/ed25519.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L9">ed25519/ed25519.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -111,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">SECRET_<wbr>KEY_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">64</span><span class="tsd-signature-symbol"> =&nbsp;64</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/ed25519/ed25519.ts#L10">ed25519/ed25519.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L10">ed25519/ed25519.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">SEED_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;32</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/ed25519/ed25519.ts#L11">ed25519/ed25519.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L11">ed25519/ed25519.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -131,13 +132,36 @@
 					<div class="tsd-signature tsd-kind-icon">SIGNATURE_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">64</span><span class="tsd-signature-symbol"> =&nbsp;64</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/ed25519/ed25519.ts#L8">ed25519/ed25519.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L8">ed25519/ed25519.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="extractpublickeyfromsecretkey" class="tsd-anchor"></a>
+					<h3>extract<wbr>Public<wbr>Key<wbr>From<wbr>Secret<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Public<wbr>Key<wbr>From<wbr>Secret<wbr>Key<span class="tsd-signature-symbol">(</span>secretKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L682">ed25519/ed25519.ts:682</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>secretKey: <span class="tsd-signature-type">Uint8Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="generatekeypair" class="tsd-anchor"></a>
 					<h3>generate<wbr>Key<wbr>Pair</h3>
@@ -148,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/ed25519/ed25519.ts#L675">ed25519/ed25519.ts:675</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L675">ed25519/ed25519.ts:675</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -171,7 +195,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/ed25519/ed25519.ts#L650">ed25519/ed25519.ts:650</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L650">ed25519/ed25519.ts:650</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -194,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/ed25519/ed25519.ts#L729">ed25519/ed25519.ts:729</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L736">ed25519/ed25519.ts:736</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -220,7 +244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/ed25519/ed25519.ts#L815">ed25519/ed25519.ts:815</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/ed25519/ed25519.ts#L822">ed25519/ed25519.ts:822</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -268,6 +292,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_ed25519_ed25519_.html#signature_length" class="tsd-kind-icon">SIGNATURE_<wbr>LENGTH</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_ed25519_ed25519_.html#extractpublickeyfromsecretkey" class="tsd-kind-icon">extract<wbr>Public<wbr>Key<wbr>From<wbr>Secret<wbr>Key</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_ed25519_ed25519_.html#generatekeypair" class="tsd-kind-icon">generate<wbr>Key<wbr>Pair</a>

@@ -70,16 +70,17 @@
 					<div class="lead">
 						<p>NewHope provides post-quantum Ring-LWE-based key exchange between two peers.</p>
 					</div>
-					<p>This is a reference version, which uses SHA3. See newhopeaessha module for
-					the BoringSSL-compatible implementation, which uses AES-SHA256.</p>
 					<p>One peer generates an &quot;offer message&quot;&quot; by calling offer(), and sends it to
 						the other peer. The other peer accepts the offer and generates &quot;accept
 						message&quot; by calling accept() with the received offer message. It then send
 						the result to the first peer, which calls finish(). After completing these
 					steps, both peers call getSharedKey() to get the established shared key.</p>
+					<p>This is a reference version, which uses SHAKE-128 and SHA-3-256. You can
+						create a custom version by requiring &quot;lib/custom&quot; and extending
+					CustomNewHope class.</p>
 					<p>Reference:</p>
-					<p>Erdem Alkim, Léo Ducas, Thomas Pöppelmann, and Peter Schwabe:
-					Post-quantum key exchange – a new hope.</p>
+					<p>Erdem Alkim, Léo Ducas, Thomas Pöppelmann, and Peter Schwabe: Post-quantum
+					key exchange – a new hope.</p>
 					<p><a href="https://cryptojedi.org/papers/#newhope">https://cryptojedi.org/papers/#newhope</a></p>
 				</div>
 			</section>
@@ -87,7 +88,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">NewHope</span>
+						<a href="_newhope_custom_.customnewhope.html" class="tsd-signature-type">CustomNewHope</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">NewHope</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -104,28 +110,28 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_newhope_newhope_.newhope.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#acceptmessagelength" class="tsd-kind-icon">accept<wbr>Message<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#offermessagelength" class="tsd-kind-icon">offer<wbr>Message<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#savedstatelength" class="tsd-kind-icon">saved<wbr>State<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#sharedkeylength" class="tsd-kind-icon">shared<wbr>Key<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#acceptmessagelength" class="tsd-kind-icon">accept<wbr>Message<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#offermessagelength" class="tsd-kind-icon">offer<wbr>Message<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#savedstatelength" class="tsd-kind-icon">saved<wbr>State<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#sharedkeylength" class="tsd-kind-icon">shared<wbr>Key<wbr>Length</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#accept" class="tsd-kind-icon">accept</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#clean" class="tsd-kind-icon">clean</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#finish" class="tsd-kind-icon">finish</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#getsharedkey" class="tsd-kind-icon">get<wbr>Shared<wbr>Key</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#offer" class="tsd-kind-icon">offer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_newhope_.newhope.html#savestate" class="tsd-kind-icon">save<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#accept" class="tsd-kind-icon">accept</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#clean" class="tsd-kind-icon">clean</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#finish" class="tsd-kind-icon">finish</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#getsharedkey" class="tsd-kind-icon">get<wbr>Shared<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#offer" class="tsd-kind-icon">offer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_newhope_newhope_.newhope.html#savestate" class="tsd-kind-icon">save<wbr>State</a></li>
 							</ul>
 						</section>
 					</div>
@@ -133,39 +139,27 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>New<wbr>Hope<span class="tsd-signature-symbol">(</span>secretSeed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span>, _prng<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RandomSource</span>, _expander<span class="tsd-signature-symbol">?: </span><a href="../modules/_newhope_newhope_.html#seedexpanderconstructor" class="tsd-signature-type">SeedExpanderConstructor</a>, _hash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_newhope_newhope_.newhope.html" class="tsd-signature-type">NewHope</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>New<wbr>Hope<span class="tsd-signature-symbol">(</span>secretSeed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span>, prng<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RandomSource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_newhope_newhope_.newhope.html" class="tsd-signature-type">NewHope</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L140">newhope/newhope.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/newhope.ts#L68">newhope/newhope.ts:68</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>SecretSeed must be of SECRET_SEED_LENGTH.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> secretSeed: <span class="tsd-signature-type">Uint8Array</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> _prng: <span class="tsd-signature-type">RandomSource</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> _expander: <a href="../modules/_newhope_newhope_.html#seedexpanderconstructor" class="tsd-signature-type">SeedExpanderConstructor</a><span class="tsd-signature-symbol"> =&nbsp;SHAKE128Expander</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> _hash: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;SHA3256</span></h5>
-									<ul class="tsd-parameters">
-									</ul>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> prng: <span class="tsd-signature-type">RandomSource</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_newhope_newhope_.newhope.html" class="tsd-signature-type">NewHope</a></h4>
@@ -173,62 +167,67 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="acceptmessagelength" class="tsd-anchor"></a>
 					<h3>accept<wbr>Message<wbr>Length</h3>
 					<div class="tsd-signature tsd-kind-icon">accept<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;ACCEPT_MESSAGE_LENGTH</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#acceptmessagelength">acceptMessageLength</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L133">newhope/newhope.ts:133</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L124">newhope/custom.ts:124</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="offermessagelength" class="tsd-anchor"></a>
 					<h3>offer<wbr>Message<wbr>Length</h3>
 					<div class="tsd-signature tsd-kind-icon">offer<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;OFFER_MESSAGE_LENGTH</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#offermessagelength">offerMessageLength</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L132">newhope/newhope.ts:132</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L123">newhope/custom.ts:123</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="savedstatelength" class="tsd-anchor"></a>
 					<h3>saved<wbr>State<wbr>Length</h3>
 					<div class="tsd-signature tsd-kind-icon">saved<wbr>State<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;SAVED_STATE_LENGTH</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#savedstatelength">savedStateLength</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L134">newhope/newhope.ts:134</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L125">newhope/custom.ts:125</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="sharedkeylength" class="tsd-anchor"></a>
 					<h3>shared<wbr>Key<wbr>Length</h3>
 					<div class="tsd-signature tsd-kind-icon">shared<wbr>Key<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#sharedkeylength">sharedKeyLength</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L135">newhope/newhope.ts:135</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L126">newhope/custom.ts:126</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="accept" class="tsd-anchor"></a>
 					<h3>accept</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">accept<span class="tsd-signature-symbol">(</span>offerMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#accept">accept</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L220">newhope/newhope.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L212">newhope/custom.ts:212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -246,34 +245,36 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="clean" class="tsd-anchor"></a>
 					<h3>clean</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">clean<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#clean">clean</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L171">newhope/newhope.ts:171</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L163">newhope/custom.ts:163</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="finish" class="tsd-anchor"></a>
 					<h3>finish</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">finish<span class="tsd-signature-symbol">(</span>acceptMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#finish">finish</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L282">newhope/newhope.ts:282</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L274">newhope/custom.ts:274</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,34 +293,36 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getsharedkey" class="tsd-anchor"></a>
 					<h3>get<wbr>Shared<wbr>Key</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Shared<wbr>Key<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#getsharedkey">getSharedKey</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L315">newhope/newhope.ts:315</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L307">newhope/custom.ts:307</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="offer" class="tsd-anchor"></a>
 					<h3>offer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">offer<span class="tsd-signature-symbol">(</span>seed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#offer">offer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L189">newhope/newhope.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L181">newhope/custom.ts:181</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -339,17 +342,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="restorestate" class="tsd-anchor"></a>
 					<h3>restore<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">restore<wbr>State<span class="tsd-signature-symbol">(</span>serializedState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#restorestate">restoreState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L163">newhope/newhope.ts:163</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L155">newhope/custom.ts:155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -362,17 +366,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="savestate" class="tsd-anchor"></a>
 					<h3>save<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">save<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>.<a href="_newhope_custom_.customnewhope.html#savestate">saveState</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/f9d9af8/packages/newhope/newhope.ts#L156">newhope/newhope.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L148">newhope/custom.ts:148</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
@@ -399,67 +404,46 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_newhope_newhope_.newhope.html" class="tsd-kind-icon">New<wbr>Hope</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_newhope_newhope_.newhope.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#acceptmessagelength" class="tsd-kind-icon">accept<wbr>Message<wbr>Length</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#offermessagelength" class="tsd-kind-icon">offer<wbr>Message<wbr>Length</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#savedstatelength" class="tsd-kind-icon">saved<wbr>State<wbr>Length</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#sharedkeylength" class="tsd-kind-icon">shared<wbr>Key<wbr>Length</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#accept" class="tsd-kind-icon">accept</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#clean" class="tsd-kind-icon">clean</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#finish" class="tsd-kind-icon">finish</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#getsharedkey" class="tsd-kind-icon">get<wbr>Shared<wbr>Key</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#offer" class="tsd-kind-icon">offer</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_newhope_newhope_.newhope.html#savestate" class="tsd-kind-icon">save<wbr>State</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_newhope_newhope_.seedexpander.html" class="tsd-kind-icon">Seed<wbr>Expander</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_newhope_newhope_.html#seedexpanderconstructor" class="tsd-kind-icon">Seed<wbr>Expander<wbr>Constructor</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_newhope_newhope_.html#accept_message_length" class="tsd-kind-icon">ACCEPT_<wbr>MESSAGE_<wbr>LENGTH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_newhope_newhope_.html#offer_message_length" class="tsd-kind-icon">OFFER_<wbr>MESSAGE_<wbr>LENGTH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_newhope_newhope_.html#public_seed_length" class="tsd-kind-icon">PUBLIC_<wbr>SEED_<wbr>LENGTH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_newhope_newhope_.html#saved_state_length" class="tsd-kind-icon">SAVED_<wbr>STATE_<wbr>LENGTH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_newhope_newhope_.html#secret_seed_length" class="tsd-kind-icon">SECRET_<wbr>SEED_<wbr>LENGTH</a>
-					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="../modules/_newhope_newhope_.html#shared_key_length" class="tsd-kind-icon">SHARED_<wbr>KEY_<wbr>LENGTH</a>
 					</li>

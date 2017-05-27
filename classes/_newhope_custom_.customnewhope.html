@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>X25519KeyAgreement | StableLib</title>
+	<title>CustomNewHope | StableLib</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_x25519_x25519_.html">&quot;x25519/x25519&quot;</a>
+					<a href="../modules/_newhope_custom_.html">&quot;newhope/custom&quot;</a>
 				</li>
 				<li>
-					<a href="_x25519_x25519_.x25519keyagreement.html">X25519KeyAgreement</a>
+					<a href="_newhope_custom_.customnewhope.html">CustomNewHope</a>
 				</li>
 			</ul>
-			<h1>Class X25519KeyAgreement</h1>
+			<h1>Class CustomNewHope</h1>
 		</div>
 	</div>
 </header>
@@ -68,18 +68,31 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>X25519 key agreement using ephemeral key pairs.</p>
+						<p>NewHope provides post-quantum Ring-LWE-based key exchange between two peers.</p>
 					</div>
-					<p>Note that unless this key agreement is combined withan authentication
-						method, such as public key signatures, it&#39;s vulnerable to man-in-the-middle
-					attacks.</p>
+					<p>This is a reference version, which uses SHA3. See newhopeaessha module for
+					the BoringSSL-compatible implementation, which uses AES-SHA256.</p>
+					<p>One peer generates an &quot;offer message&quot;&quot; by calling offer(), and sends it to
+						the other peer. The other peer accepts the offer and generates &quot;accept
+						message&quot; by calling accept() with the received offer message. It then send
+						the result to the first peer, which calls finish(). After completing these
+					steps, both peers call getSharedKey() to get the established shared key.</p>
+					<p>Reference:</p>
+					<p>Erdem Alkim, Léo Ducas, Thomas Pöppelmann, and Peter Schwabe:
+					Post-quantum key exchange – a new hope.</p>
+					<p><a href="https://cryptojedi.org/papers/#newhope">https://cryptojedi.org/papers/#newhope</a></p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">X25519KeyAgreement</span>
+						<span class="target">CustomNewHope</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_newhope_newhope_.newhope.html" class="tsd-signature-type">NewHope</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -96,28 +109,28 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#acceptmessagelength" class="tsd-kind-icon">accept<wbr>Message<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#offermessagelength" class="tsd-kind-icon">offer<wbr>Message<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#savedstatelength" class="tsd-kind-icon">saved<wbr>State<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#sharedkeylength" class="tsd-kind-icon">shared<wbr>Key<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#acceptmessagelength" class="tsd-kind-icon">accept<wbr>Message<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#offermessagelength" class="tsd-kind-icon">offer<wbr>Message<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#savedstatelength" class="tsd-kind-icon">saved<wbr>State<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#sharedkeylength" class="tsd-kind-icon">shared<wbr>Key<wbr>Length</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#accept" class="tsd-kind-icon">accept</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#clean" class="tsd-kind-icon">clean</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#finish" class="tsd-kind-icon">finish</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#getsharedkey" class="tsd-kind-icon">get<wbr>Shared<wbr>Key</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#offer" class="tsd-kind-icon">offer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_x25519_x25519_.x25519keyagreement.html#savestate" class="tsd-kind-icon">save<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#accept" class="tsd-kind-icon">accept</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#clean" class="tsd-kind-icon">clean</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#finish" class="tsd-kind-icon">finish</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#getsharedkey" class="tsd-kind-icon">get<wbr>Shared<wbr>Key</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#offer" class="tsd-kind-icon">offer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_newhope_custom_.customnewhope.html#savestate" class="tsd-kind-icon">save<wbr>State</a></li>
 							</ul>
 						</section>
 					</div>
@@ -129,25 +142,38 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>X25519<wbr>Key<wbr>Agreement<span class="tsd-signature-symbol">(</span>secretSeed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span>, prng<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RandomSource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_x25519_x25519_.x25519keyagreement.html" class="tsd-signature-type">X25519KeyAgreement</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Custom<wbr>New<wbr>Hope<span class="tsd-signature-symbol">(</span>_expander<span class="tsd-signature-symbol">: </span><a href="../modules/_newhope_custom_.html#seedexpanderconstructor" class="tsd-signature-type">SeedExpanderConstructor</a>, _hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, secretSeed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span>, _prng<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RandomSource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_newhope_custom_.customnewhope.html" class="tsd-signature-type">CustomNewHope</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L658">x25519/x25519.ts:658</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L131">newhope/custom.ts:131</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>SecretSeed must be of SECRET_SEED_LENGTH.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>_expander: <a href="../modules/_newhope_custom_.html#seedexpanderconstructor" class="tsd-signature-type">SeedExpanderConstructor</a></h5>
+								</li>
+								<li>
+									<h5>_hash: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+									</ul>
+								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> secretSeed: <span class="tsd-signature-type">Uint8Array</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> prng: <span class="tsd-signature-type">RandomSource</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> _prng: <span class="tsd-signature-type">RandomSource</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_x25519_x25519_.x25519keyagreement.html" class="tsd-signature-type">X25519KeyAgreement</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_newhope_custom_.customnewhope.html" class="tsd-signature-type">CustomNewHope</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -157,40 +183,40 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="acceptmessagelength" class="tsd-anchor"></a>
 					<h3>accept<wbr>Message<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">accept<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;ACCEPT_MESSAGE_LENGTH</span></div>
+					<div class="tsd-signature tsd-kind-icon">accept<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;ACCEPT_MESSAGE_LENGTH</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L652">x25519/x25519.ts:652</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L124">newhope/custom.ts:124</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="offermessagelength" class="tsd-anchor"></a>
 					<h3>offer<wbr>Message<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">offer<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;OFFER_MESSAGE_LENGTH</span></div>
+					<div class="tsd-signature tsd-kind-icon">offer<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;OFFER_MESSAGE_LENGTH</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L651">x25519/x25519.ts:651</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L123">newhope/custom.ts:123</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="savedstatelength" class="tsd-anchor"></a>
 					<h3>saved<wbr>State<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">saved<wbr>State<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;SAVED_STATE_LENGTH</span></div>
+					<div class="tsd-signature tsd-kind-icon">saved<wbr>State<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;SAVED_STATE_LENGTH</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L654">x25519/x25519.ts:654</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L125">newhope/custom.ts:125</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sharedkeylength" class="tsd-anchor"></a>
 					<h3>shared<wbr>Key<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">shared<wbr>Key<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;SHARED_KEY_LENGTH</span></div>
+					<div class="tsd-signature tsd-kind-icon">shared<wbr>Key<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L653">x25519/x25519.ts:653</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L126">newhope/custom.ts:126</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -207,9 +233,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L688">x25519/x25519.ts:688</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L212">newhope/custom.ts:212</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks the offer message and returns an accept message.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -230,7 +261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L673">x25519/x25519.ts:673</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L163">newhope/custom.ts:163</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -247,9 +278,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L701">x25519/x25519.ts:701</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L274">newhope/custom.ts:274</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks the accept message and generates shared key,
+									which can be retrieved using getSharedKey().</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -270,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L715">x25519/x25519.ts:715</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L307">newhope/custom.ts:307</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
@@ -281,15 +318,28 @@
 					<a name="offer" class="tsd-anchor"></a>
 					<h3>offer</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">offer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
+						<li class="tsd-signature tsd-kind-icon">offer<span class="tsd-signature-symbol">(</span>seed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L682">x25519/x25519.ts:682</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L181">newhope/custom.ts:181</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an offer message.</p>
+								</div>
+								<p>Optional public seed must have PUBLIC_SEED_LENGTH random bytes.
+								If not provided, it&#39;s generated using randomBytes.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> seed: <span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> =&nbsp;randomBytes(PUBLIC_SEED_LENGTH, this._prng)</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
 						</li>
 					</ul>
@@ -298,19 +348,19 @@
 					<a name="restorestate" class="tsd-anchor"></a>
 					<h3>restore<wbr>State</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">restore<wbr>State<span class="tsd-signature-symbol">(</span>savedState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>State<span class="tsd-signature-symbol">(</span>serializedState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L668">x25519/x25519.ts:668</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L155">newhope/custom.ts:155</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>savedState: <span class="tsd-signature-type">Uint8Array</span></h5>
+									<h5>serializedState: <span class="tsd-signature-type">Uint8Array</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
@@ -327,7 +377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/x25519/x25519.ts#L664">x25519/x25519.ts:664</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L148">newhope/custom.ts:148</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
@@ -343,7 +393,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html">"x25519/x25519"</a>
+						<a href="../modules/_newhope_custom_.html">"newhope/custom"</a>
 					</li>
 				</ul>
 			</nav>
@@ -352,86 +402,71 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_x25519_x25519_.x25519keyagreement.html" class="tsd-kind-icon">X25519<wbr>Key<wbr>Agreement</a>
+						<a href="_newhope_custom_.customnewhope.html" class="tsd-kind-icon">Custom<wbr>New<wbr>Hope</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_newhope_custom_.customnewhope.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#acceptmessagelength" class="tsd-kind-icon">accept<wbr>Message<wbr>Length</a>
+								<a href="_newhope_custom_.customnewhope.html#acceptmessagelength" class="tsd-kind-icon">accept<wbr>Message<wbr>Length</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#offermessagelength" class="tsd-kind-icon">offer<wbr>Message<wbr>Length</a>
+								<a href="_newhope_custom_.customnewhope.html#offermessagelength" class="tsd-kind-icon">offer<wbr>Message<wbr>Length</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#savedstatelength" class="tsd-kind-icon">saved<wbr>State<wbr>Length</a>
+								<a href="_newhope_custom_.customnewhope.html#savedstatelength" class="tsd-kind-icon">saved<wbr>State<wbr>Length</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#sharedkeylength" class="tsd-kind-icon">shared<wbr>Key<wbr>Length</a>
+								<a href="_newhope_custom_.customnewhope.html#sharedkeylength" class="tsd-kind-icon">shared<wbr>Key<wbr>Length</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#accept" class="tsd-kind-icon">accept</a>
+								<a href="_newhope_custom_.customnewhope.html#accept" class="tsd-kind-icon">accept</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#clean" class="tsd-kind-icon">clean</a>
+								<a href="_newhope_custom_.customnewhope.html#clean" class="tsd-kind-icon">clean</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#finish" class="tsd-kind-icon">finish</a>
+								<a href="_newhope_custom_.customnewhope.html#finish" class="tsd-kind-icon">finish</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#getsharedkey" class="tsd-kind-icon">get<wbr>Shared<wbr>Key</a>
+								<a href="_newhope_custom_.customnewhope.html#getsharedkey" class="tsd-kind-icon">get<wbr>Shared<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#offer" class="tsd-kind-icon">offer</a>
+								<a href="_newhope_custom_.customnewhope.html#offer" class="tsd-kind-icon">offer</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a>
+								<a href="_newhope_custom_.customnewhope.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_x25519_x25519_.x25519keyagreement.html#savestate" class="tsd-kind-icon">save<wbr>State</a>
+								<a href="_newhope_custom_.customnewhope.html#savestate" class="tsd-kind-icon">save<wbr>State</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_x25519_x25519_.keypair.html" class="tsd-kind-icon">Key<wbr>Pair</a>
+						<a href="../interfaces/_newhope_custom_.seedexpander.html" class="tsd-kind-icon">Seed<wbr>Expander</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_newhope_custom_.html#seedexpanderconstructor" class="tsd-kind-icon">Seed<wbr>Expander<wbr>Constructor</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#accept_message_length" class="tsd-kind-icon">ACCEPT_<wbr>MESSAGE_<wbr>LENGTH</a>
+						<a href="../modules/_newhope_custom_.html#accept_message_length" class="tsd-kind-icon">ACCEPT_<wbr>MESSAGE_<wbr>LENGTH</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#offer_message_length" class="tsd-kind-icon">OFFER_<wbr>MESSAGE_<wbr>LENGTH</a>
+						<a href="../modules/_newhope_custom_.html#offer_message_length" class="tsd-kind-icon">OFFER_<wbr>MESSAGE_<wbr>LENGTH</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#public_key_length" class="tsd-kind-icon">PUBLIC_<wbr>KEY_<wbr>LENGTH</a>
+						<a href="../modules/_newhope_custom_.html#public_seed_length" class="tsd-kind-icon">PUBLIC_<wbr>SEED_<wbr>LENGTH</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#saved_state_length" class="tsd-kind-icon">SAVED_<wbr>STATE_<wbr>LENGTH</a>
+						<a href="../modules/_newhope_custom_.html#saved_state_length" class="tsd-kind-icon">SAVED_<wbr>STATE_<wbr>LENGTH</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#secret_key_length" class="tsd-kind-icon">SECRET_<wbr>KEY_<wbr>LENGTH</a>
+						<a href="../modules/_newhope_custom_.html#secret_seed_length" class="tsd-kind-icon">SECRET_<wbr>SEED_<wbr>LENGTH</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#secret_seed_length" class="tsd-kind-icon">SECRET_<wbr>SEED_<wbr>LENGTH</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#shared_key_length" class="tsd-kind-icon">SHARED_<wbr>KEY_<wbr>LENGTH</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#generatekeypair" class="tsd-kind-icon">generate<wbr>Key<wbr>Pair</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#generatekeypairfromseed" class="tsd-kind-icon">generate<wbr>Key<wbr>Pair<wbr>From<wbr>Seed</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#scalarmult" class="tsd-kind-icon">scalar<wbr>Mult</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#scalarmultbase" class="tsd-kind-icon">scalar<wbr>Mult<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_x25519_x25519_.html#sharedkey" class="tsd-kind-icon">shared<wbr>Key</a>
+						<a href="../modules/_newhope_custom_.html#shared_key_length" class="tsd-kind-icon">SHARED_<wbr>KEY_<wbr>LENGTH</a>
 					</li>
 				</ul>
 			</nav>
