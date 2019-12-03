@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;blake2xs/blake2xs&quot; | StableLib</title>
+	<title>&quot;xchacha20poly1305/xchacha20poly1305&quot; | StableLib</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_blake2xs_blake2xs_.html">&quot;blake2xs/blake2xs&quot;</a>
+					<a href="_xchacha20poly1305_xchacha20poly1305_.html">&quot;xchacha20poly1305/xchacha20poly1305&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;blake2xs/blake2xs&quot;</h1>
+			<h1>External module &quot;xchacha20poly1305/xchacha20poly1305&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -69,19 +69,15 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_blake2xs_blake2xs_.blake2xs.html" class="tsd-kind-icon">BLAKE2<wbr>Xs</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html" class="tsd-kind-icon">XCha<wbr>Cha20<wbr>Poly1305</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_blake2xs_blake2xs_.html#max_digest_length" class="tsd-kind-icon">MAX_<wbr>DIGEST_<wbr>LENGTH</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_blake2xs_blake2xs_.html#xof" class="tsd-kind-icon">xof</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_xchacha20poly1305_xchacha20poly1305_.html#key_length" class="tsd-kind-icon">KEY_<wbr>LENGTH</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_xchacha20poly1305_xchacha20poly1305_.html#nonce_length" class="tsd-kind-icon">NONCE_<wbr>LENGTH</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_xchacha20poly1305_xchacha20poly1305_.html#tag_length" class="tsd-kind-icon">TAG_<wbr>LENGTH</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,51 +86,34 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
-					<a name="max_digest_length" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> MAX_<wbr>DIGEST_<wbr>LENGTH</h3>
-					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>DIGEST_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">65534</span><span class="tsd-signature-symbol"> =&nbsp;65534</span></div>
+					<a name="key_length" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> KEY_<wbr>LENGTH</h3>
+					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;32</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/blake2xs/blake2xs.ts#L8">blake2xs/blake2xs.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L9">xchacha20poly1305/xchacha20poly1305.ts:9</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Maximum output length</p>
-						</div>
-					</div>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="xof" class="tsd-anchor"></a>
-					<h3>xof</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">xof<span class="tsd-signature-symbol">(</span>digestLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/blake2xs/blake2xs.ts#L134">blake2xs/blake2xs.ts:134</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>digestLength: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>data: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> key: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="nonce_length" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> NONCE_<wbr>LENGTH</h3>
+					<div class="tsd-signature tsd-kind-icon">NONCE_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">24</span><span class="tsd-signature-symbol"> =&nbsp;24</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L10">xchacha20poly1305/xchacha20poly1305.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="tag_length" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> TAG_<wbr>LENGTH</h3>
+					<div class="tsd-signature tsd-kind-icon">TAG_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">16</span><span class="tsd-signature-symbol"> =&nbsp;16</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L11">xchacha20poly1305/xchacha20poly1305.ts:11</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -145,20 +124,23 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_blake2xs_blake2xs_.html">&quot;blake2xs/blake2xs&quot;</a>
+						<a href="_xchacha20poly1305_xchacha20poly1305_.html">&quot;xchacha20poly1305/xchacha20poly1305&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_blake2xs_blake2xs_.blake2xs.html" class="tsd-kind-icon">BLAKE2<wbr>Xs</a>
+						<a href="../classes/_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html" class="tsd-kind-icon">XCha<wbr>Cha20<wbr>Poly1305</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="_blake2xs_blake2xs_.html#max_digest_length" class="tsd-kind-icon">MAX_<wbr>DIGEST_<wbr>LENGTH</a>
+						<a href="_xchacha20poly1305_xchacha20poly1305_.html#key_length" class="tsd-kind-icon">KEY_<wbr>LENGTH</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_blake2xs_blake2xs_.html#xof" class="tsd-kind-icon">xof</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_xchacha20poly1305_xchacha20poly1305_.html#nonce_length" class="tsd-kind-icon">NONCE_<wbr>LENGTH</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_xchacha20poly1305_xchacha20poly1305_.html#tag_length" class="tsd-kind-icon">TAG_<wbr>LENGTH</a>
 					</li>
 				</ul>
 			</nav>

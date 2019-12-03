@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ChaCha20Poly1305 | StableLib</title>
+	<title>XChaCha20Poly1305 | StableLib</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_chacha20poly1305_chacha20poly1305_.html">&quot;chacha20poly1305/chacha20poly1305&quot;</a>
+					<a href="../modules/_xchacha20poly1305_xchacha20poly1305_.html">&quot;xchacha20poly1305/xchacha20poly1305&quot;</a>
 				</li>
 				<li>
-					<a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html">ChaCha20Poly1305</a>
+					<a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html">XChaCha20Poly1305</a>
 				</li>
 			</ul>
-			<h1>Class ChaCha20Poly1305</h1>
+			<h1>Class XChaCha20Poly1305</h1>
 		</div>
 	</div>
 </header>
@@ -68,16 +68,17 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>ChaCha20-Poly1305 Authenticated Encryption with Associated Data.</p>
+						<p>XChaCha20-Poly1305 Authenticated Encryption with Associated Data.</p>
 					</div>
-					<p>Defined in RFC7539.</p>
+					<p>Defined in draft-irtf-cfrg-xchacha-01.
+					See <a href="https://tools.ietf.org/html/draft-irtf-cfrg-xchacha-01">https://tools.ietf.org/html/draft-irtf-cfrg-xchacha-01</a></p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ChaCha20Poly1305</span>
+						<span class="target">XChaCha20Poly1305</span>
 					</li>
 				</ul>
 			</section>
@@ -94,22 +95,22 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#noncelength" class="tsd-kind-icon">nonce<wbr>Length</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#taglength" class="tsd-kind-icon">tag<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#noncelength" class="tsd-kind-icon">nonce<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#taglength" class="tsd-kind-icon">tag<wbr>Length</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#clean" class="tsd-kind-icon">clean</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#open" class="tsd-kind-icon">open</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#seal" class="tsd-kind-icon">seal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#clean" class="tsd-kind-icon">clean</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#open" class="tsd-kind-icon">open</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#seal" class="tsd-kind-icon">seal</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,13 +122,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Cha<wbr>Cha20<wbr>Poly1305<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html" class="tsd-signature-type">ChaCha20Poly1305</a></li>
+						<li class="tsd-signature tsd-kind-icon">new XCha<wbr>Cha20<wbr>Poly1305<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html" class="tsd-signature-type">XChaCha20Poly1305</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/chacha20poly1305/chacha20poly1305.ts#L26">chacha20poly1305/chacha20poly1305.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L23">xchacha20poly1305/xchacha20poly1305.ts:23</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -141,7 +142,7 @@
 									<h5>key: <span class="tsd-signature-type">Uint8Array</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html" class="tsd-signature-type">ChaCha20Poly1305</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html" class="tsd-signature-type">XChaCha20Poly1305</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -151,10 +152,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="noncelength" class="tsd-anchor"></a>
 					<h3>nonce<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">nonce<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">12</span><span class="tsd-signature-symbol"> =&nbsp;NONCE_LENGTH</span></div>
+					<div class="tsd-signature tsd-kind-icon">nonce<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">24</span><span class="tsd-signature-symbol"> =&nbsp;NONCE_LENGTH</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/chacha20poly1305/chacha20poly1305.ts#L23">chacha20poly1305/chacha20poly1305.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L20">xchacha20poly1305/xchacha20poly1305.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">tag<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">16</span><span class="tsd-signature-symbol"> =&nbsp;TAG_LENGTH</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/chacha20poly1305/chacha20poly1305.ts#L24">chacha20poly1305/chacha20poly1305.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L21">xchacha20poly1305/xchacha20poly1305.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/chacha20poly1305/chacha20poly1305.ts#L167">chacha20poly1305/chacha20poly1305.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L138">xchacha20poly1305/xchacha20poly1305.ts:138</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
@@ -198,7 +199,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/chacha20poly1305/chacha20poly1305.ts#L110">chacha20poly1305/chacha20poly1305.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L94">xchacha20poly1305/xchacha20poly1305.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -206,12 +207,15 @@
 									<p>Authenticates sealed ciphertext (which includes authentication tag) and
 									associated data, decrypts ciphertext and returns decrypted plaintext.</p>
 								</div>
-								<p>RFC7539 specifies 12 bytes for nonce. It may be this 12-byte nonce
-									(&quot;IV&quot;), or full 16-byte counter (called &quot;32-bit fixed-common part&quot;)
-								and nonce.</p>
+								<p>draft-irtf-cfrg-xchacha-01 defines a 24 byte nonce (192 bits) which
+									then uses the first 16 bytes of the nonce and the secret key with
+									Hchacha to generate an initial subkey. The last 8 bytes of the nonce
+									are then prefixed with 4 zero bytes and then provided with the subkey
+								to the chacha20poly1305 implementation.</p>
 								<p>If authentication fails, it returns null.</p>
-								<p>If dst is given (it must be of ciphertext length minus tag length),
-								the result will be put into it. Dst and plaintext must not overlap.</p>
+								<p>If dst is given (it must be the size of plaintext + the size of tag
+									length) the result will be put into it. Dst and plaintext must not
+								overlap.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -245,7 +249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/chacha20poly1305/chacha20poly1305.ts#L51">chacha20poly1305/chacha20poly1305.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/xchacha20poly1305/xchacha20poly1305.ts#L50">xchacha20poly1305/xchacha20poly1305.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -253,9 +257,11 @@
 									<p>Encrypts and authenticates plaintext, authenticates associated data,
 									and returns sealed ciphertext, which includes authentication tag.</p>
 								</div>
-								<p>RFC7539 specifies 12 bytes for nonce. It may be this 12-byte nonce
-									(&quot;IV&quot;), or full 16-byte counter (called &quot;32-bit fixed-common part&quot;)
-								and nonce.</p>
+								<p>draft-irtf-cfrg-xchacha-01 defines a 24 byte nonce (192 bits) which
+									uses the first 16 bytes of the nonce and the secret key with
+									HChaCha to generate an initial subkey. The last 8 bytes of the nonce
+									are then prefixed with 4 zero bytes and then provided with the subkey
+								to the ChaCha20Poly1305 implementation.</p>
 								<p>If dst is given (it must be the size of plaintext + the size of tag
 									length) the result will be put into it. Dst and plaintext must not
 								overlap.</p>
@@ -288,7 +294,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_chacha20poly1305_chacha20poly1305_.html">&quot;chacha20poly1305/chacha20poly1305&quot;</a>
+						<a href="../modules/_xchacha20poly1305_xchacha20poly1305_.html">&quot;xchacha20poly1305/xchacha20poly1305&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -297,38 +303,38 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html" class="tsd-kind-icon">Cha<wbr>Cha20<wbr>Poly1305</a>
+						<a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html" class="tsd-kind-icon">XCha<wbr>Cha20<wbr>Poly1305</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#noncelength" class="tsd-kind-icon">nonce<wbr>Length</a>
+								<a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#noncelength" class="tsd-kind-icon">nonce<wbr>Length</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#taglength" class="tsd-kind-icon">tag<wbr>Length</a>
+								<a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#taglength" class="tsd-kind-icon">tag<wbr>Length</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#clean" class="tsd-kind-icon">clean</a>
+								<a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#clean" class="tsd-kind-icon">clean</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#open" class="tsd-kind-icon">open</a>
+								<a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#open" class="tsd-kind-icon">open</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_chacha20poly1305_chacha20poly1305_.chacha20poly1305.html#seal" class="tsd-kind-icon">seal</a>
+								<a href="_xchacha20poly1305_xchacha20poly1305_.xchacha20poly1305.html#seal" class="tsd-kind-icon">seal</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_chacha20poly1305_chacha20poly1305_.html#key_length" class="tsd-kind-icon">KEY_<wbr>LENGTH</a>
+						<a href="../modules/_xchacha20poly1305_xchacha20poly1305_.html#key_length" class="tsd-kind-icon">KEY_<wbr>LENGTH</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_chacha20poly1305_chacha20poly1305_.html#nonce_length" class="tsd-kind-icon">NONCE_<wbr>LENGTH</a>
+						<a href="../modules/_xchacha20poly1305_xchacha20poly1305_.html#nonce_length" class="tsd-kind-icon">NONCE_<wbr>LENGTH</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_chacha20poly1305_chacha20poly1305_.html#tag_length" class="tsd-kind-icon">TAG_<wbr>LENGTH</a>
+						<a href="../modules/_xchacha20poly1305_xchacha20poly1305_.html#tag_length" class="tsd-kind-icon">TAG_<wbr>LENGTH</a>
 					</li>
 				</ul>
 			</nav>

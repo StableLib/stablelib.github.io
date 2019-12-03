@@ -142,13 +142,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Custom<wbr>New<wbr>Hope<span class="tsd-signature-symbol">(</span>_expander<span class="tsd-signature-symbol">: </span><a href="../modules/_newhope_custom_.html#seedexpanderconstructor" class="tsd-signature-type">SeedExpanderConstructor</a>, _hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, secretSeed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span>, _prng<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RandomSource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_newhope_custom_.customnewhope.html" class="tsd-signature-type">CustomNewHope</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Custom<wbr>New<wbr>Hope<span class="tsd-signature-symbol">(</span>_expander<span class="tsd-signature-symbol">: </span><a href="../modules/_newhope_custom_.html#seedexpanderconstructor" class="tsd-signature-type">SeedExpanderConstructor</a>, _hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, sharedKeyLength<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, secretSeed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Uint8Array</span>, _prng<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RandomSource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_newhope_custom_.customnewhope.html" class="tsd-signature-type">CustomNewHope</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L131">newhope/custom.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L131">newhope/custom.ts:131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -165,6 +165,9 @@
 									<h5>_hash: <span class="tsd-signature-type">object</span></h5>
 									<ul class="tsd-parameters">
 									</ul>
+								</li>
+								<li>
+									<h5>sharedKeyLength: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> secretSeed: <span class="tsd-signature-type">Uint8Array</span></h5>
@@ -186,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">accept<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;ACCEPT_MESSAGE_LENGTH</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L124">newhope/custom.ts:124</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L124">newhope/custom.ts:124</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">offer<wbr>Message<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;OFFER_MESSAGE_LENGTH</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L123">newhope/custom.ts:123</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L123">newhope/custom.ts:123</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">saved<wbr>State<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;SAVED_STATE_LENGTH</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L125">newhope/custom.ts:125</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L125">newhope/custom.ts:125</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">shared<wbr>Key<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L126">newhope/custom.ts:126</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L126">newhope/custom.ts:126</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -233,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L212">newhope/custom.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L214">newhope/custom.ts:214</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -261,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L163">newhope/custom.ts:163</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L165">newhope/custom.ts:165</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -278,7 +281,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L274">newhope/custom.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L276">newhope/custom.ts:276</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -307,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L307">newhope/custom.ts:307</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L309">newhope/custom.ts:309</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
@@ -324,7 +327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L181">newhope/custom.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L183">newhope/custom.ts:183</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -354,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L155">newhope/custom.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L157">newhope/custom.ts:157</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -377,7 +380,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/9e54595/packages/newhope/custom.ts#L148">newhope/custom.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/newhope/custom.ts#L150">newhope/custom.ts:150</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
@@ -393,7 +396,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_newhope_custom_.html">"newhope/custom"</a>
+						<a href="../modules/_newhope_custom_.html">&quot;newhope/custom&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -485,6 +488,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -533,7 +537,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

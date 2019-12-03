@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SHA256 | StableLib</title>
+	<title>SHA512_256 | StableLib</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,13 +52,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_sha256_sha256_.html">&quot;sha256/sha256&quot;</a>
+					<a href="../modules/_sha512_256_sha512_256_.html">&quot;sha512_256/sha512_256&quot;</a>
 				</li>
 				<li>
-					<a href="_sha256_sha256_.sha256.html">SHA256</a>
+					<a href="_sha512_256_sha512_256_.sha512_256.html">SHA512_256</a>
 				</li>
 			</ul>
-			<h1>Class SHA256</h1>
+			<h1>Class SHA512_256</h1>
 		</div>
 	</div>
 </header>
@@ -68,15 +68,22 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>SHA2-256 cryptographic hash algorithm.</p>
+						<p>SHA2-512/256 cryptographic hash algorithm.</p>
 					</div>
+					<p>SHA-512/256 is the same algorithm as SHA-512, but with
+					different initialization vectors and digest length.</p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SHA256</span>
+						<span class="tsd-signature-type">SHA512</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">SHA512_256</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -90,76 +97,91 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_sha256_sha256_.sha256.html#_state" class="tsd-kind-icon">_state</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#blocksize" class="tsd-kind-icon">block<wbr>Size</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#digestlength" class="tsd-kind-icon">digest<wbr>Length</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_sha512_256_sha512_256_.sha512_256.html#_statehi" class="tsd-kind-icon">_state<wbr>Hi</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_sha512_256_sha512_256_.sha512_256.html#_statelo" class="tsd-kind-icon">_state<wbr>Lo</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#blocksize" class="tsd-kind-icon">block<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_sha512_256_sha512_256_.sha512_256.html#digestlength" class="tsd-kind-icon">digest<wbr>Length</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_sha256_sha256_.sha256.html#_initstate" class="tsd-kind-icon">_init<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#clean" class="tsd-kind-icon">clean</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#cleansavedstate" class="tsd-kind-icon">clean<wbr>Saved<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#digest" class="tsd-kind-icon">digest</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#finish" class="tsd-kind-icon">finish</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#reset" class="tsd-kind-icon">reset</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#savestate" class="tsd-kind-icon">save<wbr>State</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_sha256_sha256_.sha256.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_sha512_256_sha512_256_.sha512_256.html#_initstate" class="tsd-kind-icon">_init<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#clean" class="tsd-kind-icon">clean</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#cleansavedstate" class="tsd-kind-icon">clean<wbr>Saved<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#digest" class="tsd-kind-icon">digest</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#finish" class="tsd-kind-icon">finish</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#savestate" class="tsd-kind-icon">save<wbr>State</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_sha512_256_sha512_256_.sha512_256.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new SHA256<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sha256_sha256_.sha256.html" class="tsd-signature-type">SHA256</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new SHA512_<wbr>256<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_sha512_256_sha512_256_.sha512_256.html" class="tsd-signature-type">SHA512_256</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L27">sha256/sha256.ts:27</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:19</li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="_sha256_sha256_.sha256.html" class="tsd-signature-type">SHA256</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_sha512_256_sha512_256_.sha512_256.html" class="tsd-signature-type">SHA512_256</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="_state" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _state</h3>
-					<div class="tsd-signature tsd-kind-icon">_state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol"> =&nbsp;new Int32Array(8)</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_statehi" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _state<wbr>Hi</h3>
+					<div class="tsd-signature tsd-kind-icon">_state<wbr>Hi<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from SHA512._stateHi</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L22">sha256/sha256.ts:22</a></li>
+							<li>Defined in sha512/lib/sha512.d.ts:12</li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_statelo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _state<wbr>Lo</h3>
+					<div class="tsd-signature tsd-kind-icon">_state<wbr>Lo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from SHA512._stateLo</p>
+						<ul>
+							<li>Defined in sha512/lib/sha512.d.ts:13</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="blocksize" class="tsd-anchor"></a>
 					<h3>block<wbr>Size</h3>
-					<div class="tsd-signature tsd-kind-icon">block<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;BLOCK_SIZE</span></div>
+					<div class="tsd-signature tsd-kind-icon">block<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from SHA512.blockSize</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L19">sha256/sha256.ts:19</a></li>
+							<li>Defined in sha512/lib/sha512.d.ts:11</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -168,52 +190,50 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 					<a name="digestlength" class="tsd-anchor"></a>
 					<h3>digest<wbr>Length</h3>
-					<div class="tsd-signature tsd-kind-icon">digest<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;DIGEST_LENGTH</span></div>
+					<div class="tsd-signature tsd-kind-icon">digest<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;DIGEST_LENGTH</span></div>
 					<aside class="tsd-sources">
+						<p>Overrides SHA512.digestLength</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L16">sha256/sha256.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha512_256/sha512_256.ts#L18">sha512_256/sha512_256.ts:18</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Length of hash output</p>
-						</div>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 					<a name="_initstate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _init<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">_init<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides SHA512._initState</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L33">sha256/sha256.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha512_256/sha512_256.ts#L20">sha512_256/sha512_256.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="clean" class="tsd-anchor"></a>
 					<h3>clean</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">clean<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.clean</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L59">sha256/sha256.ts:59</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:30</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -225,17 +245,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="cleansavedstate" class="tsd-anchor"></a>
 					<h3>clean<wbr>Saved<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">clean<wbr>Saved<wbr>State<span class="tsd-signature-symbol">(</span>savedState<span class="tsd-signature-symbol">: </span><a href="../modules/_sha256_sha256_.html#savedstate" class="tsd-signature-type">SavedState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">clean<wbr>Saved<wbr>State<span class="tsd-signature-symbol">(</span>savedState<span class="tsd-signature-symbol">: </span><a href="../modules/_blake2b_blake2b_.html#savedstate" class="tsd-signature-type">SavedState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.cleanSavedState</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L175">sha256/sha256.ts:175</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:61</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -246,24 +267,25 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>savedState: <a href="../modules/_sha256_sha256_.html#savedstate" class="tsd-signature-type">SavedState</a></h5>
+									<h5>savedState: <a href="../modules/_blake2b_blake2b_.html#savedstate" class="tsd-signature-type">SavedState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="digest" class="tsd-anchor"></a>
 					<h3>digest</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">digest<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.digest</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L132">sha256/sha256.ts:132</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:46</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,17 +297,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="finish" class="tsd-anchor"></a>
 					<h3>finish</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">finish<span class="tsd-signature-symbol">(</span>out<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.finish</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L102">sha256/sha256.ts:102</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:42</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,17 +327,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="reset" class="tsd-anchor"></a>
 					<h3>reset</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.reset</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L48">sha256/sha256.ts:48</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:26</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -327,72 +351,73 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="restorestate" class="tsd-anchor"></a>
 					<h3>restore<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">restore<wbr>State<span class="tsd-signature-symbol">(</span>savedState<span class="tsd-signature-symbol">: </span><a href="../modules/_sha256_sha256_.html#savedstate" class="tsd-signature-type">SavedState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>State<span class="tsd-signature-symbol">(</span>savedState<span class="tsd-signature-symbol">: </span><a href="../modules/_blake2b_blake2b_.html#savedstate" class="tsd-signature-type">SavedState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.restoreState</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L161">sha256/sha256.ts:161</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:57</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Function useful for HMAC/PBKDF2 optimization.
-										Restores state saved by saveState() and sets bytesHashed
-									to the given value.</p>
+									<p>Function useful for HMAC/PBKDF2 optimization. Restores state saved by
+									saveState() and sets bytesHashed to the given value.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>savedState: <a href="../modules/_sha256_sha256_.html#savedstate" class="tsd-signature-type">SavedState</a></h5>
+									<h5>savedState: <a href="../modules/_blake2b_blake2b_.html#savedstate" class="tsd-signature-type">SavedState</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="savestate" class="tsd-anchor"></a>
 					<h3>save<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">save<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_sha256_sha256_.html#savedstate" class="tsd-signature-type">SavedState</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>State<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_blake2b_blake2b_.html#savedstate" class="tsd-signature-type">SavedState</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.saveState</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L144">sha256/sha256.ts:144</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:52</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Function useful for HMAC/PBKDF2 optimization.
-										Returns hash state to be used with restoreState().
-										Only chain value is saved, not buffers or other
-									state variables.</p>
+									<p>Function useful for HMAC/PBKDF2 optimization. Returns hash state to be
+										used with restoreState(). Only chain value is saved, not buffers or
+									other state variables.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../modules/_sha256_sha256_.html#savedstate" class="tsd-signature-type">SavedState</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_blake2b_blake2b_.html#savedstate" class="tsd-signature-type">SavedState</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, dataLength<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from SHA512.update</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/sha256/sha256.ts#L71">sha256/sha256.ts:71</a></li>
+									<li>Defined in sha512/lib/sha512.d.ts:37</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +433,7 @@
 									<h5>data: <span class="tsd-signature-type">Uint8Array</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> dataLength: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;data.length</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dataLength: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
@@ -424,7 +449,7 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_sha256_sha256_.html">&quot;sha256/sha256&quot;</a>
+						<a href="../modules/_sha512_256_sha512_256_.html">&quot;sha512_<wbr>256/sha512_<wbr>256&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -433,62 +458,62 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_sha256_sha256_.sha256.html" class="tsd-kind-icon">SHA256</a>
+						<a href="_sha512_256_sha512_256_.sha512_256.html" class="tsd-kind-icon">SHA512_<wbr>256</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_sha256_sha256_.sha256.html#_state" class="tsd-kind-icon">_state</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#_statehi" class="tsd-kind-icon">_state<wbr>Hi</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#blocksize" class="tsd-kind-icon">block<wbr>Size</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#_statelo" class="tsd-kind-icon">_state<wbr>Lo</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#digestlength" class="tsd-kind-icon">digest<wbr>Length</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#blocksize" class="tsd-kind-icon">block<wbr>Size</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_sha256_sha256_.sha256.html#_initstate" class="tsd-kind-icon">_init<wbr>State</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#digestlength" class="tsd-kind-icon">digest<wbr>Length</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#clean" class="tsd-kind-icon">clean</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#_initstate" class="tsd-kind-icon">_init<wbr>State</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#cleansavedstate" class="tsd-kind-icon">clean<wbr>Saved<wbr>State</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#clean" class="tsd-kind-icon">clean</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#digest" class="tsd-kind-icon">digest</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#cleansavedstate" class="tsd-kind-icon">clean<wbr>Saved<wbr>State</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#finish" class="tsd-kind-icon">finish</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#digest" class="tsd-kind-icon">digest</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#reset" class="tsd-kind-icon">reset</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#finish" class="tsd-kind-icon">finish</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#reset" class="tsd-kind-icon">reset</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#savestate" class="tsd-kind-icon">save<wbr>State</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#restorestate" class="tsd-kind-icon">restore<wbr>State</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_sha256_sha256_.sha256.html#update" class="tsd-kind-icon">update</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#savestate" class="tsd-kind-icon">save<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_sha512_256_sha512_256_.sha512_256.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_sha256_sha256_.html#savedstate" class="tsd-kind-icon">Saved<wbr>State</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_sha512_256_sha512_256_.html#block_size" class="tsd-kind-icon">BLOCK_<wbr>SIZE</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_sha256_sha256_.html#block_size" class="tsd-kind-icon">BLOCK_<wbr>SIZE</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_sha256_sha256_.html#digest_length" class="tsd-kind-icon">DIGEST_<wbr>LENGTH</a>
+						<a href="../modules/_sha512_256_sha512_256_.html#digest_length" class="tsd-kind-icon">DIGEST_<wbr>LENGTH</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_sha256_sha256_.html#hash" class="tsd-kind-icon">hash</a>
+						<a href="../modules/_sha512_256_sha512_256_.html#hash" class="tsd-kind-icon">hash</a>
 					</li>
 				</ul>
 			</nav>
