@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;chacha/chacha&quot; | StableLib</title>
+	<title>&quot;x25519/keyagreement&quot; | StableLib</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_chacha_chacha_.html">&quot;chacha/chacha&quot;</a>
+					<a href="_x25519_keyagreement_.html">&quot;x25519/keyagreement&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;chacha/chacha&quot;</h1>
+			<h1>External module &quot;x25519/keyagreement&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -67,113 +67,69 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Functions</h3>
+							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_chacha_chacha_.html#stream" class="tsd-kind-icon">stream</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_chacha_chacha_.html#streamxor" class="tsd-kind-icon">streamXOR</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_x25519_keyagreement_.x25519keyagreement.html" class="tsd-kind-icon">X25519<wbr>Key<wbr>Agreement</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_x25519_keyagreement_.html#accept_message_length" class="tsd-kind-icon">ACCEPT_<wbr>MESSAGE_<wbr>LENGTH</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_x25519_keyagreement_.html#offer_message_length" class="tsd-kind-icon">OFFER_<wbr>MESSAGE_<wbr>LENGTH</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_x25519_keyagreement_.html#saved_state_length" class="tsd-kind-icon">SAVED_<wbr>STATE_<wbr>LENGTH</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_x25519_keyagreement_.html#secret_seed_length" class="tsd-kind-icon">SECRET_<wbr>SEED_<wbr>LENGTH</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="stream" class="tsd-anchor"></a>
-					<h3>stream</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">stream<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, nonce<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, dst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, nonceInplaceCounterLength<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/chacha/chacha.ts#L203">chacha/chacha.ts:203</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Generate ChaCha20 stream for the given 32-byte key and 8-byte or 12-byte
-									nonce and write it into dst and return it.</p>
-								</div>
-								<p>Never use the same key and nonce to generate more than one stream.</p>
-								<p>If nonceInplaceCounterLength is not 0, it behaves the same with respect to
-								the nonce as described in the streamXOR documentation.</p>
-								<p>stream is like streamXOR with all-zero src.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-								<li>
-									<h5>nonce: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-								<li>
-									<h5>dst: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> nonceInplaceCounterLength: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
-						</li>
-					</ul>
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="accept_message_length" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> ACCEPT_<wbr>MESSAGE_<wbr>LENGTH</h3>
+					<div class="tsd-signature tsd-kind-icon">ACCEPT_<wbr>MESSAGE_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;PUBLIC_KEY_LENGTH</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/x25519/keyagreement.ts#L11">x25519/keyagreement.ts:11</a></li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="streamxor" class="tsd-anchor"></a>
-					<h3>streamXOR</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">streamXOR<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, nonce<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, src<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, dst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, nonceInplaceCounterLength<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/chacha/chacha.ts#L133">chacha/chacha.ts:133</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Encrypt src with ChaCha20 stream generated for the given 32-byte key and
-										8-byte (as in original implementation) or 12-byte (as in RFC7539) nonce and
-									write the result into dst and return it.</p>
-								</div>
-								<p>dst and src may be the same, but otherwise must not overlap.</p>
-								<p>If nonce is 12 bytes, users should not encrypt more than 256 GiB with the
-									same key and nonce, otherwise the stream will repeat. The function will
-								throw error if counter overflows to prevent this.</p>
-								<p>If nonce is 8 bytes, the output is practically unlimited (2^70 bytes, which
-									is more than a million petabytes). However, it is not recommended to
-								generate 8-byte nonces randomly, as the chance of collision is high.</p>
-								<p>Never use the same key and nonce to encrypt more than one message.</p>
-								<p>If nonceInplaceCounterLength is not 0, the nonce is assumed to be a 16-byte
-									array with stream counter in first nonceInplaceCounterLength bytes and nonce
-									in the last remaining bytes. The counter will be incremented inplace for
-									each ChaCha block. This is useful if you need to encrypt one stream of data
-								in chunks.</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-								<li>
-									<h5>nonce: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-								<li>
-									<h5>src: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-								<li>
-									<h5>dst: <span class="tsd-signature-type">Uint8Array</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> nonceInplaceCounterLength: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="offer_message_length" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> OFFER_<wbr>MESSAGE_<wbr>LENGTH</h3>
+					<div class="tsd-signature tsd-kind-icon">OFFER_<wbr>MESSAGE_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;PUBLIC_KEY_LENGTH</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/x25519/keyagreement.ts#L10">x25519/keyagreement.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Constants for key agreement</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="saved_state_length" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> SAVED_<wbr>STATE_<wbr>LENGTH</h3>
+					<div class="tsd-signature tsd-kind-icon">SAVED_<wbr>STATE_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;SECRET_KEY_LENGTH</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/x25519/keyagreement.ts#L12">x25519/keyagreement.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="secret_seed_length" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> SECRET_<wbr>SEED_<wbr>LENGTH</h3>
+					<div class="tsd-signature tsd-kind-icon">SECRET_<wbr>SEED_<wbr>LENGTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">32</span><span class="tsd-signature-symbol"> =&nbsp;SECRET_KEY_LENGTH</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/x25519/keyagreement.ts#L13">x25519/keyagreement.ts:13</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -184,17 +140,26 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_chacha_chacha_.html">&quot;chacha/chacha&quot;</a>
+						<a href="_x25519_keyagreement_.html">&quot;x25519/keyagreement&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_chacha_chacha_.html#stream" class="tsd-kind-icon">stream</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_x25519_keyagreement_.x25519keyagreement.html" class="tsd-kind-icon">X25519<wbr>Key<wbr>Agreement</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_chacha_chacha_.html#streamxor" class="tsd-kind-icon">streamXOR</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_x25519_keyagreement_.html#accept_message_length" class="tsd-kind-icon">ACCEPT_<wbr>MESSAGE_<wbr>LENGTH</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_x25519_keyagreement_.html#offer_message_length" class="tsd-kind-icon">OFFER_<wbr>MESSAGE_<wbr>LENGTH</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_x25519_keyagreement_.html#saved_state_length" class="tsd-kind-icon">SAVED_<wbr>STATE_<wbr>LENGTH</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_x25519_keyagreement_.html#secret_seed_length" class="tsd-kind-icon">SECRET_<wbr>SEED_<wbr>LENGTH</a>
 					</li>
 				</ul>
 			</nav>

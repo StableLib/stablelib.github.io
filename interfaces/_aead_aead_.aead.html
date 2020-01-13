@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Authenticated Encryption with Associated Data.</p>
+						<p>AEAD is a common interface for authenticated encryption with associated Data.</p>
 					</div>
 				</div>
 			</section>
@@ -110,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">nonce<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/aead/aead.ts#L11">aead/aead.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/aead/aead.ts#L15">aead/aead.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -125,12 +125,12 @@
 					<div class="tsd-signature tsd-kind-icon">tag<wbr>Length<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/aead/aead.ts#L17">aead/aead.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/aead/aead.ts#L21">aead/aead.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Byte length of authentication tag in the sealed ciphertext.
+							<p>Byte length of authentication tag included in the sealed ciphertext.
 							Result of seal() will be longer than plaintext for this number of bytes.</p>
 						</div>
 					</div>
@@ -148,13 +148,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/aead/aead.ts#L45">aead/aead.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/aead/aead.ts#L49">aead/aead.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Wipes state from memory.
-									This doesn&#39;t wipe the underlying block cipher state.</p>
+									Doesn&#39;t wipe the underlying block cipher state.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
@@ -171,13 +171,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/aead/aead.ts#L38">aead/aead.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/aead/aead.ts#L42">aead/aead.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Authenticates ciphertext (which includes authentication tag) and
-									associated data, decrypts ciphertext and returns decrypted plaintext.</p>
+									associated data, decrypts ciphertext, and returns decrypted plaintext.</p>
 								</div>
 								<p>If authentication fails, it returns null.</p>
 								<p>If dst is given (it must be of ciphertext length minus tag length),
@@ -215,7 +215,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/e39714a/packages/aead/aead.ts#L26">aead/aead.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/StableLib/stablelib/blob/2f3b21e/packages/aead/aead.ts#L30">aead/aead.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
